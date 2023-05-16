@@ -109,10 +109,10 @@ if [ $? -eq 0 ]
 		then
 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Ok! Você escolheu instalar o Tracking Monitor"
 			sleep 2
-			wget https://raw.githubusercontent.com/Tracking-Digital-Solution/jar/main/trackingMonitor.jar #executa instalacao do java
+			wget https://raw.githubusercontent.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql/main/Monitor.jar?token=GHSAT0AAAAAACCNQC2ICIPNQVROWW2H7G6IZDECKKA #executa instalacao do java
 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
 			sleep 1
-			java -jar trackingMonitor.jar
+			java -jar Monitor.jar
 			
 		else 	
 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você optou por não instalar nossa aplicação por enquanto, Tchau!"
