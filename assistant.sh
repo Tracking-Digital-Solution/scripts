@@ -64,13 +64,14 @@ fi
 echo  "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Verificando se você possui nossa aplicação instalada..."
 sleep 1
 
-ls | grep "trackingMonitor.jar"
+ls | grep "Monitor.jar"
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7) : Você já tem nossa aplicação instalada!!"
 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
 			sleep 1
-			java -jar trackingMonitor.jar
+				cd cd Tracking-Digital-Solution-Jar-Azure-Mysql/
+			java -jar "Monitor.jar"
 		sleep 2
 	else
 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você NÃO possui nossa aplicação! você gostaria de instalar?"
@@ -81,39 +82,11 @@ if [ $? -eq 0 ]
 		then
 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Ok! Você escolheu instalar o Tracking Monitor"
 			sleep 2
-			wget https://raw.githubusercontent.com/Tracking-Digital-Solution/jar/main/trackingMonitor.jar #executa instalacao do java
-			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
-			sleep 1
-			java -jar trackingMonitor.jar
-			
-		else 	
-		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você optou por não instalar nossa aplicação por enquanto, Tchau!"
-		sleep 1
-	fi
-fi
+		    git clone https://github.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql.git
+				cd cd Tracking-Digital-Solution-Jar-Azure-Mysql/
 
-ls | grep "trackingMonitor.jar"
-if [ $? -eq 0 ]
-	then
-		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7) : Você já tem nossa aplicação instalada!!"
-		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
-			sleep 1
-			java -jar trackingMonitor.jar
-		sleep 2
-	else
-		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você NÃO possui nossa aplicação! você gostaria de instalar?"
-		sleep 2
-		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Confirme para mim se realmente deseja instalar o Tracking Monitor (y/n)?"		
-	read inst
-	if [ \"$inst\" == \"y\" ]
-		then
-			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Ok! Você escolheu instalar o Tracking Monitor"
-			sleep 2
-			wget https://raw.githubusercontent.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql/main/Monitor.jar?token=GHSAT0AAAAAACCNQC2ICIPNQVROWW2H7G6IZDECKKA #executa instalacao do java
-			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
 			sleep 1
 			java -jar Monitor.jar
-			
 		else 	
 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você optou por não instalar nossa aplicação por enquanto, Tchau!"
 		sleep 1
@@ -121,13 +94,29 @@ if [ $? -eq 0 ]
 fi
 
 
-
-
-
-
-# # ===================================================================
-# # Todos direitos reservados para o autor: Dra. Profa. Marise Miranda.
-# # Sob licença Creative Commons @2020
-# # Podera modificar e reproduzir para uso pessoal.
-# # Proibida a comercialização e a exclusão da autoria.
-# # ===================================================================
+# ls | grep "Monitor.jar"
+# if [ $? -eq 0 ]
+# 	then
+# 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7) : Você já tem nossa aplicação instalada!!"
+# 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
+# 			sleep 1
+# 			java -jar "Monitor.jar"
+# 		sleep 2
+# 	else
+# 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você NÃO possui nossa aplicação! você gostaria de instalar?"
+# 		sleep 2
+# 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Confirme para mim se realmente deseja instalar o Tracking Monitor (y/n)?"		
+# 	read inst
+# 	if [ \"$inst\" == \"y\" ]
+# 		then
+# 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Ok! Você escolheu instalar o Tracking Monitor"
+# 			sleep 2
+# 		wget https://raw.githubusercontent.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql/main/Monitor.jar #executa instalacao do java
+# 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Executando a aplicação..."
+# 			sleep 1
+# 			java -jar Monitor.jar
+# 		else 	
+# 		echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Você optou por não instalar nossa aplicação por enquanto, Tchau!"
+# 		sleep 1
+# 	fi
+# fi
