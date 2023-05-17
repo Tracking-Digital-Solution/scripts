@@ -83,7 +83,7 @@ if [ $? -eq 0 ]
 			echo "$(tput setaf 10)[Tracking assistant]:$(tput setaf 7)  Ok! Você escolheu instalar o Tracking Monitor"
 			sleep 2
 		    git clone https://github.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql.git
-				cd cd Tracking-Digital-Solution-Jar-Azure-Mysql/
+				cd Tracking-Digital-Solution-Jar-Azure-Mysql/
 
 			sleep 1
 			java -jar Monitor.jar
