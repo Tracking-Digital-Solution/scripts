@@ -210,7 +210,6 @@ cd Tracking-Digital-Solution-Jar-Azure-Mysql/
 echo  "$(tput setaf 10)[Tracking Assistant]:$(tput setaf 7) Software instalado com sucesso!;"
 sleep 2
 echo  "$(tput setaf 10)[Tracking Assistant]:$(tput setaf 7) Aguarde um momento...estamos entrando no software!;"
-java -jar Monitor.jar
 sleep 2
 echo  "$(tput setaf 10)[Tracking Assistant]:$(tput setaf 7) Aguarde iniciando seu projeto!;"
 java -jar Monitor.jar
