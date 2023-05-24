@@ -204,6 +204,7 @@ clear
 echo  "$(tput setaf 10)[Tracking Assistant]:$(tput setaf 7) Agora vou instalar o software no Desktop;"
 sleep 2
 cd Desktop
+rm Tracking-Digital-Solution-Jar-Azure-Mysql -r
 git clone https://github.com/Tracking-Digital-Solution/Tracking-Digital-Solution-Jar-Azure-Mysql.git
 cd Tracking-Digital-Solution-Jar-Azure-Mysql/
 echo  "$(tput setaf 10)[Tracking Assistant]:$(tput setaf 7) Software instalado com sucesso!;"
